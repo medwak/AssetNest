@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AssetNest</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo">▣</span> AssetNest</div>
+    <label class="org-picker">
+      <span>Organization</span>
+      <select id="org-select"></select>
+    </label>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button data-view="dashboard" class="active">Dashboard</button>
+    <button data-view="properties">Properties &amp; units</button>
+    <button data-view="tenants">Tenants</button>
+    <button data-view="leases">Leases</button>
+    <button data-view="invoices">Invoices</button>
+    <button data-view="payments">Payments</button>
+    <button data-view="maintenance">Maintenance</button>
+    <button data-view="settings">Settings</button>
+    <button data-view="pricing">Pricing</button>
+  </nav>
+
+  <main id="view"></main>
+
+  <dialog id="dialog">
+    <div id="dialog-body"></div>
+  </dialog>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
